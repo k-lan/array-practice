@@ -1,0 +1,12 @@
+//A simple method to calculate the average of an int[]
+public double average(int[] array)
+{
+    double i = 0;
+    for(int x : array) {
+           i += x;
+    }
+    if(i != 0) {
+        i = i/array.length;   
+    }
+    return i;
+}
