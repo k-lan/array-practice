@@ -1,12 +1,23 @@
-//A simple method to calculate the average of an int[]
-public double average(int[] array)
+/**
+ * A simple class that calculates the average of an int array[].
+ * */
+public class avg
 {
-    double i = 0;
-    for(int x : array) {
-           i += x;
+    public static void main(String[] args) //test the method
+    {
+        int[] x = new int[]{1,4};
+        System.out.println(average(x));
     }
-    if(i != 0) {
-        i = i/array.length;   
+
+    public static double average(int[] array) //the actual calculation.
+    {
+        double i = 0;
+        for(int x : array) {
+               i += x;
+        }
+        if(i != 0) {
+            i = i/array.length;   
+        }
+        return i;
     }
-    return i;
 }
